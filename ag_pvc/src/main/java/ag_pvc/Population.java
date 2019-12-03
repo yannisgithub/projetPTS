@@ -17,7 +17,7 @@ private ArrayList<Circuit> circuits = new ArrayList<Circuit>();
 	      }
 	 }
 	 
-	
+
 	public Circuit getCircuit(int i) {
 	      return this.circuits.get(i);
 	}

@@ -16,11 +16,10 @@ private Ville villeArrivee;
 
 	public Circuit(GestionnaireCircuit gestionnaireCircuit) {
 		this.gestionnaireCircuit = gestionnaireCircuit;
-		this.circuit = circuit;
+		this.circuit = new ArrayList<Ville>();
 	    this.fitness = 0.0;
 	    this.distance = 0;
-	      
-	   
+	       
 	      }
 
 	// Méthodes à rajouter
@@ -33,8 +32,9 @@ private Ville villeArrivee;
 		
 		this.circuit.set(circuitPosition, ville);
 		
+		
 	   }
-	
+
 	public int len() {
 	      return this.circuit.size();
 	}
@@ -64,7 +64,7 @@ private Ville villeArrivee;
 	        }
 	     return this.distance;
 	}
-	
+
 	public double getFitness() {
 		if(this.fitness == 0){
 			this.fitness = 1/(double)(this.getDistance());

@@ -8,7 +8,7 @@ public class Ville {
 	private double distanceX;
 	private double distanceY;
 	private double distance;
-	
+
 		public Ville() {
 			this.lon=0;
 			this.lat=0;
@@ -30,6 +30,10 @@ public class Ville {
 	      
 	      return distance;
 	    		
+	   }
+	   
+	   public String nom() {
+		   return this.nom;
 	   }
 	   
 }

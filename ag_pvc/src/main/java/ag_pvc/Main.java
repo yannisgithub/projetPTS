@@ -1,7 +1,7 @@
 package ag_pvc;
 
 public class Main {
-
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
@@ -22,13 +22,18 @@ public class Main {
 		   
 		   Ville ville5 = new Ville(7.2683912,43.7009358, "Nice");
 		   gestionCircuit.ajouterVille(ville5);
-
-		   System.out.println(ville1.distance(ville2) + " kilometres.");
 		   
+		   System.out.printf("Distance entre %s et %s : "+ville1.distance(ville2) + " kilomètres.\n", ville1.nom(), ville2.nom());
+		   System.out.println("Nombre de ville(s) : "+gestionCircuit.nombreVilles());
+		   System.out.println("ville 3 : "+gestionCircuit.getVille(2).nom());
 		   
 		   Circuit c1 = new Circuit(gestionCircuit);
-		   c1.getVille(1);
+		   System.out.println(c1.getDistance()); 
 		   
+		   System.out.println(c1.getVille(2));
+		   
+		  
+		  
 	}
 
 }

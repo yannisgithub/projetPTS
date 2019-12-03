@@ -14,6 +14,8 @@ public class GestionnaireCircuit {
 			      return this.villesDestinations.get(index);
 			   }
 			   
+			   
+			   
 			   public int nombreVilles() {
 			      return this.villesDestinations.size();
 			    		  }
